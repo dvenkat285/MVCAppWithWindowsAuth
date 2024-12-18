@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Staff Home Page";
+}
+<h2>Staff Home Page</h2>
+<h3>This page is accessible only to Staff Members.</h3>
+<h4>Current User: @HttpContext.Current.User.Identity.Name</h4>
+<br />
+Back to site @Html.ActionLink("home page", "Index", "Home")
+
